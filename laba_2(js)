@@ -1,0 +1,53 @@
+function check_number(num){
+    if (num > 0) {console.log('положительное')}
+    if (num < 0){console.log('отрицательное')}
+    if (num == 0){console.log('ноль')}
+
+    if (num % 2 == 0) {console.log('четное')}
+    else {console.log('нечетное')} 
+}
+check_number(5)
+
+
+const numb = [4, 8, 15, 16, 23, 42];
+let summ = 0
+let maxx = numb[0]
+const bolshe_10 = []
+for (let i = 0; i < numb.length; i++) {
+    summ = summ + numb[i];
+    if (numb[i]>maxx) {
+        maxx=numb[i];
+    }
+    if (numb[i] > 10) {
+        bolshe_10.push(numb[i]);
+    }
+}
+console.log("Сумма: ", summ)
+console.log("Макс. значение: ", maxx)
+console.log("Больше 10: ", bolshe_10)
+
+const students = [
+    {name_st: "Аня" , grade: 4},
+    {name_st: "Катя" , grade: 5},
+    {name_st: "Ваня" , grade: 4},
+    {name_st: "Илья" , grade: 2},
+    {name_st: "Даша" , grade: 3}
+];
+function best_st(min_grade) {
+    console.log("Выше оценки", min_grade, "у этих студентов: ");
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].grade > min_grade) {
+            console.log(students[i].name_st +" " + students[i].grade)
+        }
+    }
+}
+best_st(3)
+function sredn_grade(){
+    let summa = 0;
+    for (let i = 0; i < students.length; i++) {
+        summa = summa + students[i].grade;
+    }
+    const srednee = summa / students.length;
+    console.log("Среднее значение: ",srednee);
+}
+sredn_grade();
