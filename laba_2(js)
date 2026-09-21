@@ -1,3 +1,4 @@
+//1
 function check_number(num){
     if (num > 0) {console.log('положительное')}
     if (num < 0){console.log('отрицательное')}
@@ -8,7 +9,7 @@ function check_number(num){
 }
 check_number(5)
 
-
+//2
 const numb = [4, 8, 15, 16, 23, 42];
 let summ = 0
 let maxx = numb[0]
@@ -26,6 +27,7 @@ console.log("Сумма: ", summ)
 console.log("Макс. значение: ", maxx)
 console.log("Больше 10: ", bolshe_10)
 
+//3
 const students = [
     {name_st: "Аня" , grade: 4},
     {name_st: "Катя" , grade: 5},
@@ -51,3 +53,16 @@ function sredn_grade(){
     console.log("Среднее значение: ",srednee);
 }
 sredn_grade();
+
+//4
+const random = Math.floor(Math.random() * 10) + 1;
+let user = Number(prompt("Угадай число от 1 до 10:"));
+while (user !== random) {
+  if (user < random) {
+    alert("Загаданное число больше");
+  } else {
+    alert("Загаданное число меньше");
+  }
+  user = Number(prompt("Попробуй ещё:"));
+}
+alert("Ты угадал! Загаданное число: " + random);
