@@ -4,6 +4,7 @@
     padding: 20px;
 }
 .user{
+    border: 1px solid black;
     background-color: rgb(170, 219, 219);
     padding: 5px
 }
