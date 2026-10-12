@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+.user{
+    background-color: rgb(170, 219, 219);
+    padding: 5px
+}
