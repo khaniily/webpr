@@ -18,7 +18,7 @@ const server = createServer((req, res) => {
         res.end(menu + '<div class="one"> вторая страничка!!</div>');
     } else {
         res.statusCode = 404;
-        res.end(menu + '<div class="one">Ошибка 404: страница не найдена :(</div>');
+        res.end(menu + '<div class="one">ошибка 404: страница не найдена :(</div>');
     }
 });
 
